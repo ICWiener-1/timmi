@@ -1,0 +1,50 @@
+/* styles.css */
+
+:root {
+  --dark-gray: #333;
+  --light-gray: #555;
+  --background-color: #2b303b; /* darker blue */
+  --text-color: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+#spoiler {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333; /* make button darker */
+  border: none;
+  color: var(--light-gray);
+  padding: 20px 40px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* add a shadow to the button */
+}
+
+#spoiler:hover {
+  background-color: #444; /* change background color on hover */
+  /*transform: scale(1.02); /* make button grow slightly on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* increase shadow size on hover */
+}
+
+#image-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* hide by default */
+}
+
+#image-container img {
+  max-width: 80vw;
+  max-height: 60vh;
+  margin: auto;
+}
